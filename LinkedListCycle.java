@@ -6,7 +6,7 @@
   slow will check the nodes fast as left and will eventually meet, if they do not meet
   then there is no intersection*/
 class Solution{
-    public boolean hasCycle(ListNode head){
+    public boolean hasCycle(ListNode head,int pos){
         ListNode slow = head, fast = head;
         while(fast!=null && fast.next!=null){
             slow = slow.next;
