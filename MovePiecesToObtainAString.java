@@ -18,6 +18,8 @@ class Solution{
             if(start.charAt(i)!=target.charAt(j))return false;
             if(start.charAt(i)=='L' && i<j)return false;
             if(target.charAt(j)=='R' && i>j)return false;
+            i++;
+            j++;
         }
         return true;
     }
